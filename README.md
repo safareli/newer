@@ -1,4 +1,4 @@
-# newer [![Build Status](https://secure.travis-ci.org/safareli/newer.png?branch=master)](http://travis-ci.org/safareli/newer) [![NPM version](https://badge-me.herokuapp.com/api/npm/newer.png)](http://badges.enytc.com/for/npm/newer) [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/safareli/newer/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+# newer [![Build Status](https://secure.travis-ci.org/safareli/newer.png?branch=master)](http://travis-ci.org/safareli/newer) [![NPM version](https://badge-me.herokuapp.com/api/npm/newer.png)](http://badges.enytc.com/for/npm/newer) [![Code Climate](https://codeclimate.com/github/Safareli/newer.png)](https://codeclimate.com/github/Safareli/newer)
 
 > create new objects without `new`
 

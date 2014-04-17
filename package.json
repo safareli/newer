@@ -1,7 +1,7 @@
 {
   "name": "newer",
   "description": "create new objects without `new`",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/safareli/newer",
   "author": {
     "name": "Irakli Safareli",

@@ -7,24 +7,30 @@ Install the module with: `npm install newer`
 
 ```javascript
 var newer = require('newer');
-newer.awesome(); // "hello "
+var person = newer(Person);
+
+//same as new Person(24,'jhon');
+var jhon = person(24,'jhon');
+
+function Person(age, name) {
+    this.age = age;
+    this.name = name;
+}
+
+Person.prototype.hallo = function(){
+    return this.name + "'s age is " + this.age;
+};
 ```
 
 ## Documentation
 
-#### .awesome(name)
+#### newer(constructor)
 
-**Parameter**: `name`
-**Type**: `String`
-**Example**: `Livia`
+**Parameter**: `constructor`
+**Type**: `Function`
+**Example**: `Person`
 
-The 'awesome' method is responsible for showing a name.
-
-How to use this method
-
-```javascript
-newer.awesome('livia'); // "hello livia"
-```
+newer function returns function which could be used to create generator for some constructors
 
 ## Contributing
 

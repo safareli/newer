@@ -9,15 +9,28 @@
 'use strict';
 
 var chai = require('chai');
-chai.expect();
 chai.should();
 
 var newer = require('../lib/newer.js');
 
-describe('newer module', function(){
-  describe('#awesome()', function(){
-    it('should return a hello', function(){
-      newer.awesome('livia').should.equal("hello livia");
+describe('newer', function(){
+    function Person(age, name) {
+        this.age = age;
+        this.name = name;
+    }
+    
+    Person.prototype.hallo = function(){
+        return this.name + "'s age is " + this.age;
+    };
+    
+    it('should create generator function', function(){
+        var person = newer(Person);
+        person.should.be.instanceof(Function);
     });
-  });
+    
+    it('generated object should be instance of constructor', function(){
+        var person = newer(Person);
+        var jhon = person(24,'jhon');
+        jhon.should.be.instanceof(Person);
+    });
 });

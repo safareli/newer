@@ -1,4 +1,4 @@
-# newer [![Build Status](http://img.shields.io/travis/joyent/node.svg)](http://travis-ci.org/safareli/newer) [![NPM version](https://badge-me.herokuapp.com/api/npm/newer.png)](http://badges.enytc.com/for/npm/newer) [![Code Climate](https://codeclimate.com/github/Safareli/newer.png)](https://codeclimate.com/github/Safareli/newer)
+# newer [![Build Status](http://img.shields.io/travis/safareli/newer.svg)](http://travis-ci.org/safareli/newer) [![NPM version](https://badge-me.herokuapp.com/api/npm/newer.png)](http://badges.enytc.com/for/npm/newer) [![Code Climate](https://codeclimate.com/github/Safareli/newer.png)](https://codeclimate.com/github/Safareli/newer)
 
 > create new objects without `new`
 

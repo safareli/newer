@@ -1,24 +1,25 @@
 # newer [![Build Status](http://img.shields.io/travis/Safareli/newer.svg)](http://travis-ci.org/Safareli/newer) [![NPM version](https://badge-me.herokuapp.com/api/npm/newer.png)](http://badges.enytc.com/for/npm/newer) [![Code Climate](https://codeclimate.com/github/Safareli/newer.png)](https://codeclimate.com/github/Safareli/newer)
+ 
+> create object generator from constructor without `new`
 
-> create new objects without `new`
+## Usage
 
-## Getting Started
-Install the module with: `npm install newer`
+> you need `newer` when the class constructor accesses the arguments array directly
 
 ```javascript
 var newer = require('newer');
-var person = newer(Person);
+var personGen = newer(Person);
 
-//same as new Person(24,'jhon');
-var jhon = person(24,'jhon');
+//same as new Person(24, 'UI', 'UX', 'OpenGl');
+var jhon = personGen(24, 'UI', 'UX', 'OpenGl');
 
-function Person(age, name) {
-    this.age = age;
+function Person(name) {
     this.name = name;
+    this.skills = [].slice.call(arguments, 1);
 }
 
 Person.prototype.hallo = function(){
-    return this.name + "'s age is " + this.age;
+    return this.name + "'s skiils: " + this.skills.join(' ');
 };
 ```
 
@@ -28,16 +29,11 @@ Person.prototype.hallo = function(){
 
 **Parameter**: `constructor`
 **Type**: `Function`
-**Example**: `Person`
 
-newer function returns function which could be used to create generator for some constructors
+`newer` returns function which could be used to create new instances of constructor
 
-## Contributing
 
-Please submit all issues and pull requests to the [safareli/newer](http://github.com/safareli/newer) repository!
 
-## Support
-If you have any problem or suggestion please open an issue [here](https://github.com/safareli/newer/issues).
 
 ## License 
 

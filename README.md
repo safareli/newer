@@ -1,7 +1,7 @@
 # newer [![Build Status][travis-image]][travis-url] [![NPM version][npm-image]][npm-url] [![Code Climate][climate-image]][climate-url]
 > create object generator from constructor without `new`
 
-[![NPM franim][nodei-image]][npm-url]
+[![NPM newer][nodei-image]][npm-url]
 
 [npm-url]: https://npmjs.org/package/newer
 [npm-image]: https://badge.fury.io/js/newer.png

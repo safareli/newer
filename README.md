@@ -1,6 +1,18 @@
-# newer [![Build Status](http://img.shields.io/travis/Safareli/newer.svg)](http://travis-ci.org/Safareli/newer) [![NPM version](https://badge-me.herokuapp.com/api/npm/newer.png)](http://badges.enytc.com/for/npm/newer) [![Code Climate](https://codeclimate.com/github/Safareli/newer.png)](https://codeclimate.com/github/Safareli/newer)
- 
+# newer [![Build Status][travis-image]][travis-url] [![NPM version][npm-image]][npm-url] [![Code Climate][climate-image]][climate-url]
 > create object generator from constructor without `new`
+
+[![NPM franim][nodei-image]][npm-url]
+
+[npm-url]: https://npmjs.org/package/newer
+[npm-image]: https://badge.fury.io/js/newer.png
+
+[travis-url]: http://travis-ci.org/safareli/newer
+[travis-image]: http://img.shields.io/travis/safareli/newer.svg
+
+[climate-url]: https://codeclimate.com/github/safareli/newer
+[climate-image]: https://codeclimate.com/github/safareli/newer.png
+
+[nodei-image]: https://nodei.co/npm-dl/newer.png?months=1
 
 ## Usage
 
@@ -61,4 +73,3 @@ HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
 WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
-

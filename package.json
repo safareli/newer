@@ -1,7 +1,7 @@
 {
   "name": "newer",
-  "description": "create new objects without `new`",
-  "version": "0.1.4",
+  "description": "create object generator from constructor without `new`",
+  "version": "0.1.5",
   "homepage": "https://github.com/safareli/newer",
   "author": {
     "name": "Irakli Safareli",
